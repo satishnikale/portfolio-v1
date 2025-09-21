@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Palette, Zap } from 'lucide-react';
 
@@ -35,8 +34,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I'm a passionate full-stack developer with 5+ years of experience creating 
-            digital solutions that bridge the gap between design and functionality.
+            I'm a passionate full-stack developer eager to create digital solutions that bridge the gap between design and functionality, constantly learning and applying modern web technologies to build impactful projects.
           </p>
         </motion.div>
 
@@ -53,13 +51,13 @@ export default function About() {
                 whileHover={{ scale: 1.05, rotate: 5 }}
                 transition={{ type: "spring", stiffness: 300, damping: 10 }}
               >
-                S 
+                S
               </motion.div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-4">
-                Satish Nikale 
+                Satish Nikale
               </h3>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                Full Stack Developer based in Pune, India. I love turning complex 
+                Full Stack Developer based in Pune, India. I love turning complex
                 problems into simple, beautiful solutions.
               </p>
             </div>

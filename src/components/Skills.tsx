@@ -15,20 +15,20 @@ const skills = [
 const categories = [
   {
     title: 'Frontend',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Python', 'Express', 'FastAPI', 'GraphQL'],
+    skills: ['Node.js', 'Python', 'Express', 'RestAPI', 'MySQL'],
   },
   {
     title: 'Database',
-    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Prisma', 'Supabase'],
+    skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Prisma'],
   },
-  {
-    title: 'DevOps',
-    skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform'],
-  },
+  // {
+  //   title: 'DevOps',
+  //   skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD', 'Terraform'],
+  // },
 ];
 
 export default function Skills() {

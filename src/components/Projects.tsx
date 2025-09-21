@@ -4,39 +4,39 @@ import { ExternalLink, Github, Star } from 'lucide-react';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, shopping cart, and admin dashboard.',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Docker'],
-    githubUrl: '#',
-    liveUrl: '#',
+    title: 'SyncUp - Video Calling Application using real time Chat',
+    description: 'Full-stack Video Calling app with React, Node.js, Tailwing, WebRTC. Features include user authentication, Screen Share, Mute with chat integration.',
+    image: 'https://images.pexels.com/photos/4099099/pexels-photo-4099099.jpeg',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'WebRTC', 'TypeScript', 'Tailwind'],
+    githubUrl: 'https://github.com/satishnikale/SyncUp-frontend',
+    liveUrl: 'https://syncup-app.netlify.app/',
     featured: true,
   },
   {
-    title: 'Task Management App',
-    description: 'Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.',
-    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
-    technologies: ['React', 'TypeScript', 'Socket.io', 'MongoDB'],
-    githubUrl: '#',
+    title: 'Excalidraw',
+    description: 'Collaborative White-Board tool with real-time updates, draw shapes functionality, and team collaboration features using webSocket.',
+    image: 'https://images.pexels.com/photos/4348342/pexels-photo-4348342.jpeg',
+    technologies: ['React', 'TypeScript', 'WebSocket', 'Postgress', 'Prisma', 'Turborepo'],
+    githubUrl: 'https://github.com/satishnikale/excalidraw',
     liveUrl: '#',
     featured: false,
   },
   {
-    title: 'AI Chat Application',
-    description: 'Modern chat application powered by AI with real-time messaging, voice notes, and intelligent response suggestions.',
-    image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
-    technologies: ['Next.js', 'OpenAI API', 'WebSockets', 'Prisma'],
+    title: 'Rate-Store',
+    description: 'A store rating platform with React, Express.js, and PostgreSQL, allowing users to submit and manage ratings (1–5) and admin, owner Dashboards',
+    image: 'https://images.pexels.com/photos/7948058/pexels-photo-7948058.jpeg',
+    technologies: ['Node.js', 'React.js', 'TypeScript', 'Prisma', 'Postgress'],
     githubUrl: '#',
     liveUrl: '#',
     featured: true,
   },
   {
-    title: 'Weather Dashboard',
-    description: 'Beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.',
-    image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-    technologies: ['Vue.js', 'Chart.js', 'Weather API', 'Tailwind'],
-    githubUrl: '#',
-    liveUrl: '#',
+    title: 'Allen',
+    description: 'Beautiful Allen clone using react.js, Tailwind, TypeScript',
+    image: 'https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg',
+    technologies: ['React', 'TypeScript','Tailwind'],
+    githubUrl: 'https://github.com/satishnikale/allen.in-clone',
+    liveUrl: 'https://allen-clone-satish-nikale.netlify.app/',
     featured: false,
   },
 ];
@@ -56,7 +56,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A collection of my recent work showcasing different technologies 
+            A collection of my recent work showcasing different technologies
             and problem-solving approaches.
           </p>
         </motion.div>
@@ -70,9 +70,8 @@ export default function Projects() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -10 }}
-              className={`bg-gray-50 dark:bg-dark-surface rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ${
-                project.featured ? 'ring-2 ring-blue-500/20' : ''
-              }`}
+              className={`bg-gray-50 dark:bg-dark-surface rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 ${project.featured ? 'ring-2 ring-blue-500/20' : ''
+                }`}
             >
               {project.featured && (
                 <motion.div
@@ -85,7 +84,7 @@ export default function Projects() {
                   Featured
                 </motion.div>
               )}
-              
+
               <div className="relative overflow-hidden group">
                 <img
                   src={project.image}
